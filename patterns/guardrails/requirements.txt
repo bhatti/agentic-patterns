@@ -1,0 +1,2 @@
+# Pattern 32: example.py uses Python stdlib + re only.
+# Book examples: LlamaIndex + Anthropic; see examples/32_guardrails/

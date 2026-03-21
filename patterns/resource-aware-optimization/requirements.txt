@@ -1,0 +1,1 @@
+# Pattern 40 — stdlib-only example.

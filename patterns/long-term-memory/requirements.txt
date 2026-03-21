@@ -1,0 +1,4 @@
+# Pattern 28: example.py uses Python stdlib only.
+# For Mem0 + OpenAI + Chroma (book parity), install:
+#   pip install mem0ai openai chromadb python-dotenv
+# See generative-ai-design-patterns/examples/28_long_term_memory/basic_memory.py

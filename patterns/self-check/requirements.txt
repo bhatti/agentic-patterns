@@ -1,0 +1,2 @@
+# Pattern 31: example.py uses Python stdlib + math only.
+# Book notebooks use OpenAI API with logprobs; see examples/31_self_check/

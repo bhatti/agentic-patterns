@@ -201,6 +201,9 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+# Pattern examples: generated artifacts
+patterns/code-execution/_output/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/

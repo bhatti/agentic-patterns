@@ -1,0 +1,3 @@
+# Adapter tuning example: runnable without GPU using sklearn.
+# For real LLM adapter tuning, add: peft, transformers, datasets, accelerate
+scikit-learn>=1.3.0

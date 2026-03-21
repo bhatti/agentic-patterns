@@ -1,0 +1,1 @@
+# Pattern 41 — stdlib-only structural demos.

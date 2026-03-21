@@ -1,0 +1,1 @@
+# Pattern 39 — stdlib demo; optional langchain-core from repo root (LCEL RAG stub).

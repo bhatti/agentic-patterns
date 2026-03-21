@@ -1,0 +1,1 @@
+# Pattern 43 — stdlib-only example.

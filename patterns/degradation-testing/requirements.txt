@@ -1,0 +1,3 @@
+# Pattern 27: the example uses asyncio + stdlib only.
+# For OpenAI/vLLM benchmarks, see generative-ai-design-patterns/examples/27_degradation_testing/
+# and install aiohttp, matplotlib, etc. as in that folder.

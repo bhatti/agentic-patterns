@@ -1,0 +1,4 @@
+# Code execution + LangGraph pipeline (install in a venv: pip install -r requirements.txt)
+langgraph>=0.2.0
+langchain-core>=0.3.0
+matplotlib>=3.8.0

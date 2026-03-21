@@ -1,0 +1,1 @@
+# Pattern 48 — stdlib only.

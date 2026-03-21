@@ -1,0 +1,2 @@
+# Pattern 29: example.py uses Python stdlib only.
+# Book notebook uses pydantic-ai + Gemini; install per examples/29_template_generation/.

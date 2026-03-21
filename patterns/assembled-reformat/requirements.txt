@@ -1,0 +1,2 @@
+# Pattern 30: example.py uses Python stdlib only.
+# Book notebook: pydantic-ai + Gemini; see examples/30_assembled_reformat/

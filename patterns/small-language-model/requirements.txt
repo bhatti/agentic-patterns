@@ -1,0 +1,3 @@
+# Optional: this pattern's example.py uses Python stdlib only (no pip deps).
+# For Hugging Face + bitsandbytes + torch, use the project root requirements.txt
+# and see generative-ai-design-patterns/examples/24_small_language_model/.

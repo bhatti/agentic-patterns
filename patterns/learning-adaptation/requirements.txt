@@ -1,0 +1,1 @@
+# Pattern 36 — stdlib-only example. Production: PyTorch / TRL / HF ecosystem (see repo root optional deps).

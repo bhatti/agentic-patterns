@@ -1,0 +1,1 @@
+# Pattern 42 — stdlib-only; export metrics to OTLP/Prometheus/etc. in production.

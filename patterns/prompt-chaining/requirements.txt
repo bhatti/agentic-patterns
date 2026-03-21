@@ -1,0 +1,2 @@
+# Pattern 33: example uses Python stdlib only.
+# Optional: LangGraph / LangChain for production chains (see patterns/tool-calling, patterns/code-execution).

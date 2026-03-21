@@ -1,0 +1,3 @@
+# Pattern 26 demo uses Python stdlib only.
+# For vLLM / SGLang / TensorRT-LLM, install per vendor docs and see
+# generative-ai-design-patterns/examples/26_inference_optimization/.

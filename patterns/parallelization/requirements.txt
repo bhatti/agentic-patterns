@@ -1,0 +1,1 @@
+# Pattern 35 — stdlib demo; optional langchain-core from repo root requirements.txt (LCEL RunnableParallel).

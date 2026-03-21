@@ -1,0 +1,39 @@
+# Core Dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# LLM Frameworks (core only - install others as needed)
+langchain-core>=0.1.0
+
+# Ollama Integration
+ollama>=0.1.0
+
+# HuggingFace (for logits masking and model access)
+transformers>=4.35.0
+torch>=2.1.0
+sentencepiece>=0.1.99
+
+# Utilities
+requests>=2.31.0
+httpx>=0.25.0
+
+# Logging
+loguru>=0.7.0
+
+# Data Processing (for ML patterns)
+numpy>=1.24.0
+
+# Configuration
+pyyaml>=6.0.1
+
+# Optional Dependencies (install separately if needed)
+# langchain>=0.1.0
+# langchain-community>=0.0.20
+# langgraph>=0.0.20
+# crewai>=0.11.0
+# pandas>=2.0.0
+# scikit-learn>=1.3.0
+# pytest>=7.4.0
+# pytest-asyncio>=0.21.0
+# aiohttp>=3.9.0
+

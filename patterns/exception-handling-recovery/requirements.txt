@@ -1,0 +1,1 @@
+# Pattern 37 — stdlib-only example.

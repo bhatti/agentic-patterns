@@ -1,0 +1,2 @@
+# Pattern 34 — stdlib-only demo; optional langchain-core from repo root requirements.txt.
+# Full LangGraph supervisors: optional langgraph (see root requirements comments).
