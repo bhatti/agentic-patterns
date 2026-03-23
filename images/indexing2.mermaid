@@ -1,0 +1,15 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    Q["❓ 'How do I log in?'"]
+    Q --> T1["💭 HyDE\nHypothetical Answer"]
+    Q --> T2["🔤 Query Expansion\n→ authentication"]
+    Q --> T3["🔀 Hybrid Search\nBM25 + Semantic"]
+    Q --> T4["🕸️ GraphRAG\nRelated Chunks"]
+    T1 --> R["📋 Better\nResults"]
+    T2 --> R
+    T3 --> R
+    T4 --> R
+    style T1 fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style T2 fill:#78350f,stroke:#f59e0b,color:#fff
+    style T3 fill:#064e3b,stroke:#10b981,color:#fff
+    style T4 fill:#4c1d95,stroke:#8b5cf6,color:#fff

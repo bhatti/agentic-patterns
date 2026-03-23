@@ -1,0 +1,9 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    D["Dataset"] --> P["Pipeline (prompt + input)"]
+    P --> E["Evaluator"]
+    E --> O["Optimizer"]
+    O -->|"best prompt"| P
+    style P fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style E fill:#064e3b,stroke:#10b981,color:#fff
+    style O fill:#4c1d95,stroke:#8b5cf6,color:#fff

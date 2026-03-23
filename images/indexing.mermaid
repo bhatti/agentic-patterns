@@ -1,0 +1,14 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    D["📄 Docs"] --> M["🏷️ Metadata"]
+    M --> T["⏰ Temporal\nTags"]
+    T --> C["⚠️ Contradiction\nDetection"]
+    C --> I["💾 Index"]
+    Q["❓ Query"] --> TF["⏰ Filter"]
+    TF --> RR["🔍 Recency\nRetrieval"]
+    I --> TF
+    RR --> CR["⚖️ Resolve\nConflicts"]
+    CR --> A["📄 Answer"]
+    style M fill:#78350f,stroke:#f59e0b,color:#fff
+    style C fill:#7f1d1d,stroke:#dc2626,color:#fff
+    style CR fill:#064e3b,stroke:#10b981,color:#fff

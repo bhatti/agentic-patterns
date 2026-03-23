@@ -1,0 +1,11 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    WM["Working"]
+    EP["Episodic"]
+    PR["Procedural"]
+    SM["Semantic"]
+    LLM["LLM + tools"]
+    WM --> LLM
+    EP --> SM
+    SM --> LLM
+    PR --> LLM

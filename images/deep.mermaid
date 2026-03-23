@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    Q[/"Complex Query"/] --> R
+    subgraph LOOP["🔄 Iterative Search Loop"]
+        R["🔍 RETRIEVE\nSearch multiple sources"]
+        T["🧠 THINK\nAnalyze & synthesize"]
+        G["❓ IDENTIFY GAPS\nFind missing info"]
+        C{"✅ Good Enough?\nOR Budget Exhausted?"}
+        R --> T --> G --> C
+        C -->|"No"| R
+    end
+    C -->|"Yes"| A[/"Comprehensive Answer"/]

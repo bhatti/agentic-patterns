@@ -1,0 +1,7 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    U["User"] --> A["assistant (LLM + tools)"]
+    A -->|"tool_calls"| T["ToolNode"]
+    T --> A
+    A -->|"done"| R["Answer"]
+    style T fill:#78350f,stroke:#f59e0b,color:#fff

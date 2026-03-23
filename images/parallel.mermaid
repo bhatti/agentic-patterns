@@ -1,0 +1,18 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TD
+    IN[Input]
+    B1[Branch A]
+    B2[Branch B]
+    B3[Branch C]
+    B4[Branch D]
+    M[Merge / synthesize]
+    OUT[Result]
+    IN --> B1
+    IN --> B2
+    IN --> B3
+    IN --> B4
+    B1 --> M
+    B2 --> M
+    B3 --> M
+    B4 --> M
+    M --> OUT

@@ -1,0 +1,9 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    ITEM["Item to evaluate"] --> PROMPT["Judge prompt\n(rubric + item)"]
+    RUBRIC["Scoring rubric"] --> PROMPT
+    PROMPT --> LLM["LLM (temp=0)"]
+    LLM --> SCORES["Scores 1-5 per criterion"]
+    LLM --> JUST["Brief justifications"]
+    style LLM fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style SCORES fill:#064e3b,stroke:#10b981,color:#fff

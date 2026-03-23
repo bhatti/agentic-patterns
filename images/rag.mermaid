@@ -1,0 +1,14 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    subgraph INDEX["📚 Indexing Pipeline"]
+        direction LR
+        K["Knowledge"] --> L["Load"] --> C["Chunk"] --> S["Store"]
+    end
+    subgraph QUERY["🔍 Query Pipeline"]
+        direction LR
+        Q["Query"] --> R["Retrieve"] --> G["Ground"] --> LLM["🧠 LLM"] --> A["Answer"]
+    end
+    S --> R
+    style INDEX fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style QUERY fill:#064e3b,stroke:#10b981,color:#fff,stroke-width:2px
+

@@ -1,0 +1,13 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    Q["❓ Query"] --> OOD{"🚫 Out-of-Domain?"}
+    OOD -->|"Yes"| REF["❌ Refuse"]
+    OOD -->|"No"| GEN["📝 Generate"]
+    GEN --> SELF["🔄 Self-RAG\n(6 Steps)"]
+    SELF --> CITE["📌 Add Citations"]
+    CITE --> GUARD["🛡️ Guardrails"]
+    GUARD --> OK["✅ Trustworthy\nResponse"]
+    style OOD fill:#7f1d1d,stroke:#dc2626,color:#fff
+    style SELF fill:#78350f,stroke:#f59e0b,color:#fff
+    style CITE fill:#064e3b,stroke:#10b981,color:#fff
+    style GUARD fill:#4c1d95,stroke:#8b5cf6,color:#fff

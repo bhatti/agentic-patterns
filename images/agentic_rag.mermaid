@@ -1,0 +1,11 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    DOC[Documents]
+    CH[Chunk + embed]
+    V[(Vector store)]
+    Q[User query]
+    R[Retrieve + rank]
+    G[LLM generate]
+    DOC --> CH --> V
+    Q --> R
+    V --> R --> G

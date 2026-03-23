@@ -1,0 +1,19 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    subgraph S1["Step 1"]
+        A["Generate\nNeutral"]
+    end
+    subgraph S2["Step 2"]
+        B["Create Training\nDataset"]
+    end
+    subgraph S3["Step 3"]
+        C["Fine-Tune\nModel"]
+    end
+    subgraph S4["Step 4"]
+        D["Inference"]
+    end
+    S1 --> S2 --> S3 --> S4
+    style S1 fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style S2 fill:#78350f,stroke:#f59e0b,color:#fff,stroke-width:2px
+    style S3 fill:#064e3b,stroke:#10b981,color:#fff,stroke-width:2px
+    style S4 fill:#4c1d95,stroke:#8b5cf6,color:#fff,stroke-width:2px

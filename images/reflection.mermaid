@@ -1,0 +1,14 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    U["User prompt"] --> G1["First call: generate"]
+    G1 --> INIT["Initial response"]
+    INIT --> EV["Evaluator"]
+    EV --> FB["Feedback"]
+    U --> MOD["Modified prompt"]
+    INIT --> MOD
+    FB --> MOD
+    MOD --> G2["Second call: generate"]
+    G2 --> REV["Revised response"]
+    style G1 fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style EV fill:#78350f,stroke:#f59e0b,color:#fff
+    style G2 fill:#064e3b,stroke:#10b981,color:#fff

@@ -1,0 +1,21 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    Q["❓ Question"]
+    subgraph V1["Variant 1: Zero-Shot CoT"]
+        Z["Prompt +\n'Think step by step'"]
+    end
+    subgraph V2["Variant 2: Few-Shot CoT"]
+        F["Prompt +\nExample Q→Steps→A"]
+    end
+    subgraph V3["Variant 3: Auto CoT"]
+        A1["Sample questions"] --> A2["Generate CoT\n(zero-shot)"] --> A3["Use as few-shot"]
+    end
+    Q --> V1
+    Q --> V2
+    Q --> V3
+    V1 --> OUT["📄 Steps +\nConclusion"]
+    V2 --> OUT
+    V3 --> OUT
+    style V1 fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style V2 fill:#78350f,stroke:#f59e0b,color:#fff,stroke-width:2px
+    style V3 fill:#064e3b,stroke:#10b981,color:#fff,stroke-width:2px

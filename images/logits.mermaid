@@ -1,0 +1,17 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    subgraph S1["Step 1"]
+        A["🔍 Intercept\nSampling"]
+    end
+    subgraph S2["Step 2"]
+        B["🚫 Zero Out\nInvalid Tokens"]
+    end
+    subgraph S3["Step 3"]
+        C["⏪ Backtrack\nif Invalid"]
+    end
+    S1 --> S2 --> S3
+    S3 -.->|"If needed"| S1
+    style S1 fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style S2 fill:#78350f,stroke:#f59e0b,color:#fff,stroke-width:2px
+    style S3 fill:#064e3b,stroke:#10b981,color:#fff,stroke-width:2px
+

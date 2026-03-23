@@ -1,0 +1,19 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    subgraph PIPELINE["Pipeline (LLM-agnostic)"]
+        S1["Step 1"] --> S2["Step 2"]
+    end
+    subgraph PROD["Production"]
+        R1["Real LLM"]
+        R2["Real LLM"]
+    end
+    subgraph TEST["Test / Dev"]
+        M1["Mock"]
+        M2["Mock"]
+    end
+    S1 -.->|inject| R1
+    S2 -.->|inject| R2
+    S1 -.->|inject| M1
+    S2 -.->|inject| M2
+    style PIPELINE fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style TEST fill:#78350f,stroke:#f59e0b,color:#fff

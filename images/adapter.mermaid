@@ -1,0 +1,13 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    subgraph FROZEN["Frozen"]
+        FM["Foundation Model"]
+    end
+    subgraph TRAINED["Trained"]
+        AD["Adapter (LoRA)"]
+    end
+    IN["Input"] --> FM
+    FM --> AD
+    AD --> OUT["Task Output"]
+    style FM fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style AD fill:#78350f,stroke:#f59e0b,color:#fff,stroke-width:2px

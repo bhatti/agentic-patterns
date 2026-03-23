@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    Q["Query"]
+    X["Exact hit?"]
+    S["Semantic hit?"]
+    M["Call LLM"]
+    Q --> X
+    X -->|"yes"| R["Return"]
+    X -->|"no"| S
+    S -->|"yes"| R
+    S -->|"no"| M
+    M --> R

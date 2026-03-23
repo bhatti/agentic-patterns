@@ -1,0 +1,11 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    W[Working / short-term]
+    E[Episodic]
+    P[Procedural]
+    S[Semantic / vector]
+    L[LLM + tools]
+    W --> L
+    E --> L
+    P --> L
+    S --> L

@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    U["User goal"]
+    LLM["LLM emits DSL"]
+    SB["Sandbox"]
+    SW["Graphviz / runtime"]
+    OUT["Artifact"]
+    U --> LLM
+    LLM --> SB
+    SB --> SW
+    SW --> OUT
+    style SB fill:#78350f,stroke:#f59e0b,color:#fff

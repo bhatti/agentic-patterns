@@ -1,0 +1,23 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    subgraph S1["1"]
+        A["🎲 Generate\nPair"]
+    end
+    subgraph S2["2"]
+        B["⚖️ Compare\nPick Winner"]
+    end
+    subgraph S3["3"]
+        C["📊 Build\nDataset"]
+    end
+    subgraph S4["4"]
+        D["🎯 DPO\nFine-Tune"]
+    end
+    subgraph S5["5"]
+        E["🚀 Use\nOptimized"]
+    end
+    S1 --> S2 --> S3 --> S4 --> S5
+    style S1 fill:#1e3a8a,stroke:#3b82f6,color:#fff,stroke-width:2px
+    style S2 fill:#78350f,stroke:#f59e0b,color:#fff,stroke-width:2px
+    style S3 fill:#4c1d95,stroke:#8b5cf6,color:#fff,stroke-width:2px
+    style S4 fill:#064e3b,stroke:#10b981,color:#fff,stroke-width:2px
+    style S5 fill:#065f46,stroke:#10b981,color:#fff,stroke-width:2px

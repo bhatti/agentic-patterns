@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    Q["Request"] --> O{"Choose\nOption"}
+    O -->|"1"| G["📜 Formal Grammar\n(EBNF/BNF)"]
+    O -->|"2"| J["📋 Standard Format\n(JSON/XML)"]
+    O -->|"3"| S["📐 Custom Schema\n(Pydantic)"]
+    G --> R["✅ Valid Output"]
+    J --> R
+    S --> R
+    style G fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style J fill:#78350f,stroke:#f59e0b,color:#fff
+    style S fill:#064e3b,stroke:#10b981,color:#fff

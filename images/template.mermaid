@@ -1,0 +1,9 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    G["LLM: template + slots"]
+    R["Human review"]
+    S["Store approved template"]
+    F["Fill from OMS"]
+    G --> R
+    R --> S
+    S --> F

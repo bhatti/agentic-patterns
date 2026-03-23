@@ -1,0 +1,11 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    A["📝 Input\n(Style A)"] --> O{"Approach"}
+    O -->|"Option 1"| F["📚 Few-Shot\nExamples"]
+    O -->|"Option 2"| T["🎯 Fine-Tuned\nModel"]
+    F --> L["🧠 LLM"]
+    T --> L
+    L --> R["📄 Output\n(Style B)"]
+    style A fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style F fill:#78350f,stroke:#f59e0b,color:#fff
+    style T fill:#064e3b,stroke:#10b981,color:#fff

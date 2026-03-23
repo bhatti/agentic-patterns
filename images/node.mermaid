@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart LR
+    I["🔍 Initial\nRetrieval"] --> R["📊 Rerank\n(BGE)"]
+    R --> F["🗑️ Filter\nObsolete"]
+    F --> D["🎯 Disambiguate"]
+    D --> C["📝 Compress"]
+    C --> O["✅ Clean\nChunks"]
+    style I fill:#1e3a8a,stroke:#3b82f6,color:#fff
+    style R fill:#78350f,stroke:#f59e0b,color:#fff
+    style F fill:#7f1d1d,stroke:#dc2626,color:#fff
+    style D fill:#4c1d95,stroke:#8b5cf6,color:#fff
+    style C fill:#064e3b,stroke:#10b981,color:#fff

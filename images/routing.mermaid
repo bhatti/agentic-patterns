@@ -1,0 +1,17 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TD
+    IN[Incoming request]
+    R1[Rules / flags]
+    R2[Embedding NN]
+    R3[LLM or ML classifier]
+    H1[Handler A]
+    H2[Handler B]
+    H3[Default]
+    IN --> R1
+    R1 -->|match| H1
+    R1 -->|no match| R2
+    R2 -->|high confidence| H2
+    R2 -->|low| R3
+    R3 --> H1
+    R3 --> H2
+    R3 --> H3

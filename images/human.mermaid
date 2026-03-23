@@ -1,0 +1,12 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TD
+    A[Automated proposal]
+    T{Escalate?}
+    Q[Human queue]
+    R[Approve / edit / reject]
+    P[Commit or train]
+    A --> T
+    T -->|yes| Q
+    T -->|no| P
+    Q --> R
+    R --> P
