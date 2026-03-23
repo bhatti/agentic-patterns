@@ -1,0 +1,17 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#1e40af', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e3a8a', 'lineColor': '#3b82f6', 'secondaryColor': '#065f46', 'tertiaryColor': '#92400e'}}}%%
+flowchart TB
+    U["User"]
+    O["Orchestrator"]
+    A["Specialist A"]
+    B["Specialist B"]
+    M["Merge"]
+    V["Critic / verifier"]
+    F["Deliverable"]
+    U --> O
+    O --> A
+    O --> B
+    A --> M
+    B --> M
+    M --> V
+    V --> F
+    style V fill:#7f1d1d,stroke:#dc2626,color:#fff
